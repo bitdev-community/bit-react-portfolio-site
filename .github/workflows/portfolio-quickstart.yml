@@ -1,0 +1,41 @@
+name: Portfolio - Quick Start
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: 
+      image: bitsrc/ops:latest
+    env:
+      HOME: /home/bituser
+        
+    steps:
+    - name: Initialize a workspace
+      run: |
+        bit new portfolio portfolio-workspace --aspect showoff.starters/portfolio
+    - name: Run the app component
+      run: |
+        cd portfolio-workspace
+        bit run portfolio &
+        sleep 160
+        curl http://localhost:3000
+    - name: Preview components
+      run: |
+        cd portfolio-workspace
+        bit start &
+        sleep 160
+        curl http://localhost:3000
+    - name: Collaborate
+      run: |
+        cd portfolio-workspace
+        bit status
+    - name: Compile and Build
+      run: |
+        cd portfolio-workspace
+        bit compile
+        bit build
+    continue-on-error: false
