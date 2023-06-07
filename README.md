@@ -4,6 +4,7 @@
 [![Scope Contact Me](https://img.shields.io/badge/Scope-Contact_Me_(5)-820596)](https://bit.cloud/showoff/contact-me)
 [![Scope Dev](https://img.shields.io/badge/Scope-Dev_(4)-820596)](https://bit.cloud/showoff/dev)
 [![Scope Starters](https://img.shields.io/badge/Scope-Starters_(1)-820596)](https://bit.cloud/showoff/starters)
+[![Github Action](https://github.com/bitdev-community/bit-react-portfolio-site/actions/workflows/portfolio-quickstart.yml/badge.svg)](https://github.com/bitdev-community/bit-react-portfolio-site/actions/workflows/portfolio-quickstart.yml)
 
 # Portfolio Template - Bit | React | AWS
 
