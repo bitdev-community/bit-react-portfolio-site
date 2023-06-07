@@ -48,6 +48,21 @@ Run the Workspace UI to preview your components:
 bit start
 ```
 
+## Deployment
+
+Before deploying the frontend to Netlify and Form Handler AWS Lambda function, setup the following environment variables.
+
+```
+export NETLIFY_AUTH_TOKEN=<Your Netlify Token>
+export AWS_ACCESS_KEY_ID=<Your AWS Access Key ID>
+export AWS_SECRET_ACCESS_KEY=<Your AWS Access Key Secret>
+```
+
+Then tag your components to deploy the app components with the latest changes.
+
+```
+bit tag -m "Deploying the application"
+```
 
 ## Contributor Guidelines
 
@@ -59,12 +74,3 @@ bit start
 - Update Heap Size to about 4GB - `export NODE_OPTIONS="--max-old-space-size=4096"`
 - Launch Development Server - `bit start`
 
-## Deployment
-
-Before deploying the application, setup the following environment variables.
-
-```
-export NETLIFY_AUTH_TOKEN=<Your Netlify Token>
-export AWS_ACCESS_KEY_ID=<Your AWS Access Key ID>
-export AWS_SECRET_ACCESS_KEY=<Your AWS Access Key Secret>
-```
