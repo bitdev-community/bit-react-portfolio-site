@@ -14,7 +14,42 @@ Currently, it deploys on Netlify. It also uses AWS Lambda as a backend for conta
 
 **Note:** You can swap the backend from AWS Lambda to anything you prefer.
 
-## Development Setup
+# Initialize a workspace
+
+Initialize a workspace to start your journey into component-driven development. A workspace is a group of files and directories that provide the necessary context for components to be authored, composed, maintained, and collaborated on.
+
+Run the following to create a workspace with a few components included, using the [portfolio starter](https://bit.cloud/showoff/starters)
+
+```
+bit new portfolio portfolio-workspace --aspect showoff.starters/portfolio
+```
+
+Open your workspace directory:
+
+```
+cd portfolio-workspace
+```
+
+# Run the app component
+
+Your workspace maintains a number of components. One of these components is also an [app](https://bit.dev/reference/apps/application-types/). Run the following to run the app component:
+
+```
+bit run portfolio
+```
+
+# Preview components
+
+A Bit component is a reusable, independently source-controlled module, that is stored in [scopes](https://bit.dev/reference/scope/scope-overview/) and maintained in [workspaces](https://bit.dev/reference/workspace/creating-workspaces/). Bit components enable a new software development strategy that can be used to complement monorepos and poly-repos, or replace them, altogether.
+
+Run the Workspace UI to preview your components:
+
+```
+bit start
+```
+
+
+## Contributor Guidelines
 
 - Clone the repository via the `SSH` url
 - Install Bit Version Manager - `npm i -g @teambit/bvm` | `yarn global add @teambit/bvm`
